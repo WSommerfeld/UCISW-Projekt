@@ -1,1 +1,1 @@
-To jest Marcininator na projekt z UCISW-2. 
+Projekt z UCISW-2. 
