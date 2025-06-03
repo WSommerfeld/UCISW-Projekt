@@ -1,0 +1,28 @@
+Command line:
+   QUIZ_simple_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50587
+
+Tue Jun 03 15:50:37 2025
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5155.75 Meg
+
+ Total Signals          : 24
+ Total Nets             : 1672
+ Total Signal Drivers   : 10
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 3670
+
+ Total Simulation Time: 0.28125 sec
+
+ Current Memory Usage: 5155.75 Meg
+
+Tue Jun 03 15:50:53 2025
+

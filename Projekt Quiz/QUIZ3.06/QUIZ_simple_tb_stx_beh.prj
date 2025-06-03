@@ -1,0 +1,2 @@
+vhdl isim_temp "QUIZ.vhd"
+vhdl isim_temp "QUIZ_simple_tb.vhd"

@@ -1,0 +1,337 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: GeneratorLiczbLosowych.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GeneratorLiczbLosowych.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GeneratorLiczbLosowych"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Top Module Name                    : GeneratorLiczbLosowych
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" in Library work.
+Entity <GeneratorLiczbLosowych> compiled.
+Entity <GeneratorLiczbLosowych> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GeneratorLiczbLosowych> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <GeneratorLiczbLosowych> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:790 - "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+Entity <GeneratorLiczbLosowych> analyzed. Unit <GeneratorLiczbLosowych> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <GeneratorLiczbLosowych>.
+    Related source file is "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd".
+WARNING:Xst:646 - Signal <questions> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <lfsr_reg>.
+    Found 1-bit xor4 for signal <lfsr_reg$xor0000> created at line 26.
+    Summary:
+	inferred   1 Xor(s).
+Unit <GeneratorLiczbLosowych> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 8-bit register                                        : 1
+# Xors                                                 : 1
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Xors                                                 : 1
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GeneratorLiczbLosowych> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GeneratorLiczbLosowych, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GeneratorLiczbLosowych.ngr
+Top Level Output File Name         : GeneratorLiczbLosowych
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 1
+#      LUT4                        : 1
+# FlipFlops/Latches                : 8
+#      FDC                         : 4
+#      FDP                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                        4  out of   4656     0%  
+ Number of Slice Flip Flops:              8  out of   9312     0%  
+ Number of 4 input LUTs:                  1  out of   9312     0%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     66    15%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+set                                | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 1.926ns (Maximum Frequency: 519.224MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.134ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'set'
+  Clock period: 1.926ns (frequency: 519.224MHz)
+  Total number of paths / destination ports: 11 / 8
+-------------------------------------------------------------------------
+Delay:               1.926ns (Levels of Logic = 1)
+  Source:            lfsr_reg_7 (FF)
+  Destination:       lfsr_reg_0 (FF)
+  Source Clock:      set rising
+  Destination Clock: set rising
+
+  Data Path: lfsr_reg_7 to lfsr_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  lfsr_reg_7 (lfsr_reg_7)
+     LUT4:I0->O            1   0.612   0.000  Mxor_lfsr_reg_xor0000_xo<0>1 (lfsr_reg_xor0000)
+     FDP:D                     0.268          lfsr_reg_0
+    ----------------------------------------
+    Total                      1.926ns (1.394ns logic, 0.532ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'set'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 1)
+  Source:            lfsr_reg_5 (FF)
+  Destination:       rand<5> (PAD)
+  Source Clock:      set rising
+
+  Data Path: lfsr_reg_5 to rand<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.451  lfsr_reg_5 (lfsr_reg_5)
+     OBUF:I->O                 3.169          rand_5_OBUF (rand<5>)
+    ----------------------------------------
+    Total                      4.134ns (3.683ns logic, 0.451ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.74 secs
+ 
+--> 
+
+Total memory usage is 4498912 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

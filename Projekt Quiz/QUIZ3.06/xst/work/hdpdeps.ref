@@ -1,0 +1,14 @@
+V3 6
+FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ.vhd" 2025/06/03.15:37:42 P.20131013
+EN work/QUIZ 1748957865 \
+      FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/QUIZ/Behavioral 1748957866 \
+      FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ.vhd" EN work/QUIZ 1748957865
+FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" 2025/06/03.10:42:14 P.20131013
+EN work/GeneratorLiczbLosowych 1748957407 \
+      FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/GeneratorLiczbLosowych/Behavioral 1748957408 \
+      FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" \
+      EN work/GeneratorLiczbLosowych 1748957407
