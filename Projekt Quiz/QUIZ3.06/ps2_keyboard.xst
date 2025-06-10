@@ -1,0 +1,5 @@
+set -tmpdir "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/xst/projnav.tmp"
+set -xsthdpdir "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/xst"
+elaborate
+-ifn ps2_keyboard.prj
+-ifmt mixed

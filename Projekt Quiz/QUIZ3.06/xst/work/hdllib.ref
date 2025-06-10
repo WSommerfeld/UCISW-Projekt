@@ -1,4 +1,6 @@
 AR quiz behavioral "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ.vhd" sub00/vhpl03 1748957866
 AR generatorliczblosowych behavioral "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" sub00/vhpl01 1748957408
+EN ps2_keyboard NULL "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/ps2_keyboard.vhd" sub00/vhpl04 1749494836
 EN generatorliczblosowych NULL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" sub00/vhpl00 1748957407
 EN quiz NULL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ.vhd" sub00/vhpl02 1748957865
+AR ps2_keyboard behavioral "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/ps2_keyboard.vhd" sub00/vhpl05 1749494837

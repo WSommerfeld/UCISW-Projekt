@@ -1,0 +1,6 @@
+[Inputs]
+set
+reset
+[Outputs]
+=rand[7:0]=
+[BiDir]

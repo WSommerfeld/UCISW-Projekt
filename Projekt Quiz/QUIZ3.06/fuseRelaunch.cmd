@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ_simple_tb_isim_beh.exe" -prj "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ_simple_tb_beh.prj" "work.QUIZ_simple_tb" 
+-intstyle "ise" -incremental -o "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/rng_test_isim_beh.exe" -prj "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/rng_test_beh.prj" "work.rng_test" 

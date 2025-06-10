@@ -1,0 +1,2 @@
+vhdl work "rng.vhd"
+vhdl work "rng_test.vhd"

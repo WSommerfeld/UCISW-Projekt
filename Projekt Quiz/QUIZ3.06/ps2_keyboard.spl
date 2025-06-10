@@ -1,0 +1,13 @@
+[Inputs]
+clk
+reset
+ps2_clk
+ps2_data
+[Outputs]
+set_rng
+reset_out
+set_q
+check
+=answer[7:0]=
+=state_out[3:0]=
+[BiDir]

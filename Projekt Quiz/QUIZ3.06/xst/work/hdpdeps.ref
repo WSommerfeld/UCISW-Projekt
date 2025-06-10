@@ -1,4 +1,12 @@
-V3 6
+V3 9
+FL "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/ps2_keyboard.vhd" 2025/06/09.20:47:11 P.20131013
+EN work/ps2_keyboard 1749494836 \
+      FL "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/ps2_keyboard.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/ps2_keyboard/Behavioral 1749494837 \
+      FL "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/ps2_keyboard.vhd" \
+      EN work/ps2_keyboard 1749494836
 FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ.vhd" 2025/06/03.15:37:42 P.20131013
 EN work/QUIZ 1748957865 \
       FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ.vhd" \

@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="QUIZ3.06.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="GeneratorLiczbLosowych.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="GeneratorLiczbLosowych.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="GeneratorLiczbLosowych.lso"/>
@@ -34,7 +35,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="GeneratorLiczbLosowych.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GeneratorLiczbLosowych.prj"/>
     <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="GeneratorLiczbLosowych.ptwx"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="GeneratorLiczbLosowych.spl"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="GeneratorLiczbLosowych.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="GeneratorLiczbLosowych.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="GeneratorLiczbLosowych.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="GeneratorLiczbLosowych.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="GeneratorLiczbLosowych.twx" xil_pn:subbranch="Par"/>
@@ -51,6 +54,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="GeneratorLiczbLosowych_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="GeneratorLiczbLosowych_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GeneratorLiczbLosowych_par.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GeneratorLiczbLosowych_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="GeneratorLiczbLosowych_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="GeneratorLiczbLosowych_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="GeneratorLiczbLosowych_usage.xml"/>
@@ -61,14 +65,16 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="QUIZ.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="QUIZ.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="QUIZ.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="QUIZ.spl"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="QUIZ.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="QUIZ.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="QUIZ.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="QUIZ.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="QUIZ_envsettings.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="QUIZ_simple_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="QUIZ_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="QUIZ_simple_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="QUIZ_simple_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="QUIZ_simple_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="QUIZ_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="QUIZ_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="QUIZ_tb_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="QUIZ_vhdl.prj"/>
@@ -83,6 +89,18 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="licznik.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="licznik.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ps2_keyboard.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ps2_keyboard.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ps2_keyboard.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ps2_keyboard.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ps2_keyboard.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="rng_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="rng_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="rng_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="rng_test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_GeneratorLiczbLosowych_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -90,64 +108,88 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1748957449" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1748957449">
-      <status xil_pn:value="SuccessfullyRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1748958633" xil_pn:in_ck="-3929882530034016757" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1748958633">
+    <transform xil_pn:end_ts="1749482225" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1749482225">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1749482923" xil_pn:in_ck="-7297402564610907207" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1749482923">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="QUIZ.vhd"/>
       <outfile xil_pn:name="QUIZ_simple_tb.vhd"/>
       <outfile xil_pn:name="licznik.vhd"/>
       <outfile xil_pn:name="rng.vhd"/>
+      <outfile xil_pn:name="rng_test.vhd"/>
+      <outfile xil_pn:name="tb_GeneratorLiczbLosowych.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1748958322" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6454556207387590390" xil_pn:start_ts="1748958322">
+    <transform xil_pn:end_ts="1749482929" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6182915504371529452" xil_pn:start_ts="1749482929">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1748958322" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2410339350248673908" xil_pn:start_ts="1748958322">
+    <transform xil_pn:end_ts="1749482929" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7708564322091997202" xil_pn:start_ts="1749482929">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1748958322" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-324821431758968405" xil_pn:start_ts="1748958322">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1748958633" xil_pn:in_ck="-3929882530034016757" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1748958633">
+    <transform xil_pn:end_ts="1749482929" xil_pn:in_ck="-7297402564610907207" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1749482929">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="QUIZ.vhd"/>
       <outfile xil_pn:name="QUIZ_simple_tb.vhd"/>
       <outfile xil_pn:name="licznik.vhd"/>
       <outfile xil_pn:name="rng.vhd"/>
+      <outfile xil_pn:name="rng_test.vhd"/>
+      <outfile xil_pn:name="tb_GeneratorLiczbLosowych.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1748958636" xil_pn:in_ck="-3929882530034016757" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8939291691689200297" xil_pn:start_ts="1748958633">
+    <transform xil_pn:end_ts="1749482934" xil_pn:in_ck="-7297402564610907207" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1571429140845562742" xil_pn:start_ts="1749482929">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="QUIZ_simple_tb_beh.prj"/>
-      <outfile xil_pn:name="QUIZ_simple_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="rng_test_beh.prj"/>
+      <outfile xil_pn:name="rng_test_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1748958636" xil_pn:in_ck="-4749285735343818634" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5503366967642333514" xil_pn:start_ts="1748958636">
+    <transform xil_pn:end_ts="1749482934" xil_pn:in_ck="-7337069799534227101" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4517844593779466985" xil_pn:start_ts="1749482934">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="QUIZ_simple_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="rng_test_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1748957931" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1748957931">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1748957931" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1484723113385333262" xil_pn:start_ts="1748957931">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1748957931" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-324821431758968405" xil_pn:start_ts="1748957931">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -164,15 +206,22 @@
     <transform xil_pn:end_ts="1748957931" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297138737980" xil_pn:start_ts="1748957931">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1748957931" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1876125339642239797" xil_pn:start_ts="1748957931">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1748958230" xil_pn:in_ck="2864228545657601108" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3579835377184573980" xil_pn:start_ts="1748958214">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="QUIZ.lso"/>
       <outfile xil_pn:name="QUIZ.ngc"/>
       <outfile xil_pn:name="QUIZ.ngr"/>
@@ -191,6 +240,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
   </transforms>
 
