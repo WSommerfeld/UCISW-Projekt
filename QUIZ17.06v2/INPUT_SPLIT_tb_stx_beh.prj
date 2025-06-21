@@ -1,0 +1,2 @@
+vhdl isim_temp "INPUT_SPLIT.vhd"
+vhdl isim_temp "INPUT_SPLIT_tb.vhd"

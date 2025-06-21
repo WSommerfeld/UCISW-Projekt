@@ -1,0 +1,8 @@
+[Inputs]
+=state[3:0]=
+[Outputs]
+s0
+s1
+s2
+s3
+[BiDir]

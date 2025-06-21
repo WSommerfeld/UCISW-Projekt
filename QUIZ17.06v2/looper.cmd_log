@@ -1,0 +1,2 @@
+vhdtdtfi -lib work looper.vhd -prj QUIZ3.06 -o looper.spl -module looper -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e looper.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/looper.sym 

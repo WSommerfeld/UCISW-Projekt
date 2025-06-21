@@ -1,0 +1,284 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'core'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off
+-c 100 -o core_map.ncd core.ngd core.pcf 
+Target Device  : xc3s500e
+Target Package : vq100
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Jun 17 15:47:29 2025
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    5
+Logic Utilization:
+  Number of Slice Flip Flops:         1,331 out of   9,312   14%
+  Number of 4 input LUTs:             4,164 out of   9,312   44%
+Logic Distribution:
+  Number of occupied Slices:          2,305 out of   4,656   49%
+    Number of Slices containing only related logic:   2,305 out of   2,305 100%
+    Number of Slices containing unrelated logic:          0 out of   2,305   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       4,284 out of   9,312   46%
+    Number used as logic:             4,161
+    Number used as a route-thru:        120
+    Number used as Shift registers:       3
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  8 out of      66   12%
+  Number of RAMB16s:                      2 out of      20   10%
+  Number of BUFGMUXs:                     3 out of      24   12%
+
+Average Fanout of Non-Clock Nets:                4.15
+
+Peak Memory Usage:  4452 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT55207_SW0_SW11_f5.  There
+   is a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT5254_SW0_SW11_f5.  There
+   is a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT35222_SW0_SW11_f5.  There
+   is a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT30176_SW1. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT50228_SW0_SW11_f5.  There
+   is a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s500e' is a WebPack part.
+INFO:LIT:243 - Logical network XLXI_7/DO_Rdy has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  35 block(s) removed
+  10 block(s) optimized away
+  35 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "XLXI_7/DO_Rdy" is sourceless and has been removed.
+The signal "XLXI_7/ByteRdy_and0000" is sourceless and has been removed.
+ Sourceless block "XLXI_7/ByteRdy" (SFF) removed.
+  The signal "XLXI_7/ByteRdy" is sourceless and has been removed.
+   Sourceless block "XLXI_7/ResDORdy/DInToggle" (FF) removed.
+    The signal "XLXI_7/ResDORdy/DInToggle" is sourceless and has been removed.
+     Sourceless block "XLXI_7/ResDORdy/qDIn" (FF) removed.
+      The signal "XLXI_7/ResDORdy/qDIn" is sourceless and has been removed.
+       Sourceless block "XLXI_7/ResDORdy/prevDIn" (FF) removed.
+        The signal "XLXI_7/ResDORdy/prevDIn" is sourceless and has been removed.
+         Sourceless block "XLXI_7/ResDORdy/Mxor_DOut_Result1" (ROM) removed.
+     Sourceless block "XLXI_7/ResDORdy/DInToggle_not00011_INV_0" (BUF) removed.
+      The signal "XLXI_7/ResDORdy/DInToggle_not0001" is sourceless and has been
+removed.
+The signal "XLXI_7/ByteRdy_not0001" is sourceless and has been removed.
+The signal "XLXI_7/Result<0>" is sourceless and has been removed.
+ Sourceless block "XLXI_7/cnt5b_0" (SFF) removed.
+  The signal "XLXI_7/cnt5b<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/Mcount_cnt5b_xor<1>11" (ROM) removed.
+    The signal "XLXI_7/Result<1>" is sourceless and has been removed.
+     Sourceless block "XLXI_7/cnt5b_1" (SFF) removed.
+      The signal "XLXI_7/cnt5b<1>" is sourceless and has been removed.
+       Sourceless block "XLXI_7/Mcount_cnt5b_xor<2>11" (ROM) removed.
+        The signal "XLXI_7/Result<2>" is sourceless and has been removed.
+         Sourceless block "XLXI_7/cnt5b_2" (SFF) removed.
+          The signal "XLXI_7/cnt5b<2>" is sourceless and has been removed.
+           Sourceless block "XLXI_7/Mcount_cnt5b_cy<2>11" (ROM) removed.
+            The signal "XLXI_7/Mcount_cnt5b_cy<2>" is sourceless and has been removed.
+             Sourceless block "XLXI_7/Mcount_cnt5b_xor<4>11" (ROM) removed.
+              The signal "XLXI_7/Result<4>" is sourceless and has been removed.
+               Sourceless block "XLXI_7/cnt5b_4" (SFF) removed.
+                The signal "XLXI_7/cnt5b<4>" is sourceless and has been removed.
+                 Sourceless block "XLXI_7/cntMod11_or00007" (ROM) removed.
+                  The signal "XLXI_7/cntMod11_or00007/O" is sourceless and has been removed.
+           Sourceless block "XLXI_7/cntMod11_or00002" (ROM) removed.
+            The signal "XLXI_7/cntMod11_or00002" is sourceless and has been removed.
+           Sourceless block "XLXI_7/Mcount_cnt5b_xor<3>11" (ROM) removed.
+            The signal "XLXI_7/Result<3>" is sourceless and has been removed.
+             Sourceless block "XLXI_7/cnt5b_3" (SFF) removed.
+              The signal "XLXI_7/cnt5b<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/Mcount_cnt5b_xor<0>11_INV_0" (BUF) removed.
+The signal "XLXI_7/Result<0>2" is sourceless and has been removed.
+ Sourceless block "XLXI_7/cntMod11_0" (SFF) removed.
+  The signal "XLXI_7/cntMod11<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/Mcount_cntMod11_xor<1>11" (ROM) removed.
+    The signal "XLXI_7/Result<1>2" is sourceless and has been removed.
+     Sourceless block "XLXI_7/cntMod11_1" (SFF) removed.
+      The signal "XLXI_7/cntMod11<1>" is sourceless and has been removed.
+       Sourceless block "XLXI_7/Mcount_cntMod11_xor<2>11" (ROM) removed.
+        The signal "XLXI_7/Result<2>2" is sourceless and has been removed.
+         Sourceless block "XLXI_7/cntMod11_2" (SFF) removed.
+          The signal "XLXI_7/cntMod11<2>" is sourceless and has been removed.
+           Sourceless block "XLXI_7/Mcount_cntMod11_xor<3>11" (ROM) removed.
+            The signal "XLXI_7/Result<3>2" is sourceless and has been removed.
+             Sourceless block "XLXI_7/cntMod11_3" (SFF) removed.
+              The signal "XLXI_7/cntMod11<3>" is sourceless and has been removed.
+               Sourceless block "XLXI_7/ByteRdy_cmp_eq00001" (ROM) removed.
+                The signal "XLXI_7/ByteRdy_cmp_eq0000" is sourceless and has been removed.
+                 Sourceless block "XLXI_7/cntMod11_or000016" (ROM) removed.
+                  The signal "XLXI_7/cntMod11_or0000" is sourceless and has been removed.
+   Sourceless block "XLXI_7/Mcount_cntMod11_xor<0>11_INV_0" (BUF) removed.
+The signal "XLXI_7/Mxor_ByteRdy_xor0000_xo<4>" is sourceless and has been
+removed.
+ Sourceless block "XLXI_7/ByteRdy_and0000" (ROM) removed.
+The signal "XLXI_7/Mxor_ByteRdy_xor0000_xo<5>" is sourceless and has been
+removed.
+The signal "XLXI_7/N21" is sourceless and has been removed.
+The signal "XLXI_8/I_CursorCnt/LineCnt_not00011" is sourceless and has been
+removed.
+Unused block "XLXI_7/ByteRdy_and0000_SW0_SW0" (ROM) removed.
+Unused block "XLXI_7/ByteRdy_not00011" (ROM) removed.
+Unused block "XLXI_7/Mxor_ByteRdy_xor0000_xo<4>1" (ROM) removed.
+Unused block "XLXI_7/Mxor_ByteRdy_xor0000_xo<5>1" (ROM) removed.
+Unused block "XLXI_8/I_CursorCnt/LineCnt_not000111" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+VCC 		XLXI_22
+GND 		XLXI_23
+GND 		XLXI_7/XST_GND
+VCC 		XLXI_7/XST_VCC
+LUT2 		XLXI_8/I_CursorCnt/RAM_DI_Out<7>1
+   optimized to 0
+GND 		XLXI_8/XLXI_141
+VCC 		XLXI_8/XLXI_93
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| PS2_Clk                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| PS2_Data                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| VGA_B                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_G                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_HS                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_R                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_VS                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

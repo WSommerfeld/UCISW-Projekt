@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/xst"
+elaborate
+-ifn loopser.prj
+-ifmt mixed

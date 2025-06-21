@@ -1,0 +1,1359 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+Reading design: QUIZ.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "QUIZ.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "QUIZ"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Use New Parser                     : yes
+Top Module Name                    : QUIZ
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\lab\Desktop\QUIZ3.06222\QUIZ3.06\QUIZ.vhd" into library work
+Parsing entity <QUIZ>.
+Parsing architecture <Behavioral> of entity <quiz>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <QUIZ> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <QUIZ>.
+    Related source file is "C:\Users\lab\Desktop\QUIZ3.06222\QUIZ3.06\QUIZ.vhd".
+WARNING:Xst:647 - Input <COUNT_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CORRECT_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <selected_question_text<726>> equivalent to <selected_question_text<782>> has been removed
+    Register <selected_question_text<605>> equivalent to <selected_question_text<782>> has been removed
+    Register <selected_question_text<597>> equivalent to <selected_question_text<782>> has been removed
+    Register <selected_question_text<461>> equivalent to <selected_question_text<549>> has been removed
+    Register <selected_question_text<389>> equivalent to <selected_question_text<549>> has been removed
+    Register <selected_question_text<266>> equivalent to <selected_question_text<548>> has been removed
+    Register <selected_question_text<685>> equivalent to <selected_question_text<694>> has been removed
+    Register <selected_question_text<645>> equivalent to <selected_question_text<694>> has been removed
+    Register <selected_question_text<533>> equivalent to <selected_question_text<694>> has been removed
+    Register <selected_question_text<325>> equivalent to <selected_question_text<405>> has been removed
+    Register <selected_question_text<168>> equivalent to <selected_question_text<244>> has been removed
+    Register <selected_question_text<185>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<184>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<177>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<171>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<169>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<156>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<155>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<140>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<138>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<128>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<108>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<80>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<73>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<67>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<54>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<52>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<51>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<48>> equivalent to <selected_question_text<290>> has been removed
+    Register <selected_question_text<330>> equivalent to <selected_question_text<334>> has been removed
+    Register <selected_question_text<414>> equivalent to <selected_question_text<422>> has been removed
+    Register <selected_question_text<337>> equivalent to <selected_question_text<684>> has been removed
+    Register <selected_question_text<21>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<29>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<37>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<45>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<53>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<61>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<69>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<77>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<85>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<93>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<101>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<109>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<125>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<133>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<141>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<157>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<165>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<173>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<181>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<189>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<205>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<221>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<229>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<253>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<277>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<293>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<317>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<341>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<349>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<373>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<381>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<413>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<453>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<469>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<477>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<493>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<517>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<525>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<557>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<573>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<589>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<613>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<629>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<638>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<653>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<677>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<693>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<701>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<709>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<717>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<725>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<733>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<741>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<749>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<757>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<765>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<773>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<797>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<805>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<812>> equivalent to <selected_question_text<813>> has been removed
+    Register <selected_question_text<203>> equivalent to <selected_question_text<610>> has been removed
+    Register <selected_question_text<201>> equivalent to <selected_question_text<306>> has been removed
+    Register <selected_question_text<259>> equivalent to <selected_question_text<304>> has been removed
+    Register <selected_question_text<734>> equivalent to <selected_question_text<774>> has been removed
+    Register <selected_question_text<669>> equivalent to <selected_question_text<774>> has been removed
+    Register <selected_question_text<117>> equivalent to <selected_question_text<213>> has been removed
+    Register <selected_question_text<437>> equivalent to <selected_question_text<485>> has been removed
+    Register <selected_question_text<350>> equivalent to <selected_question_text<358>> has been removed
+    Register <selected_question_text<209>> equivalent to <selected_question_text<273>> has been removed
+    Register <selected_question_text<795>> equivalent to <selected_question_text<804>> has been removed
+    Register <selected_question_text<794>> equivalent to <selected_question_text<804>> has been removed
+    Register <selected_question_text<793>> equivalent to <selected_question_text<804>> has been removed
+    Register <selected_question_text<789>> equivalent to <selected_question_text<804>> has been removed
+    Register <selected_question_text<342>> equivalent to <selected_question_text<411>> has been removed
+    Register <selected_question_text<790>> equivalent to <selected_question_text<803>> has been removed
+    Register <selected_question_text<781>> equivalent to <selected_question_text<803>> has been removed
+    Register <selected_question_text<347>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<264>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<257>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<193>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<163>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<131>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<97>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<84>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<70>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<68>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<65>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<62>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<59>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<58>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<57>> equivalent to <selected_question_text<353>> has been removed
+    Register <selected_question_text<258>> equivalent to <selected_question_text<408>> has been removed
+    Register <selected_question_text<285>> equivalent to <selected_question_text<397>> has been removed
+    Register <selected_question_text<149>> equivalent to <selected_question_text<397>> has been removed
+    Register <selected_question_text<372>> equivalent to <selected_question_text<378>> has been removed
+    Register <selected_question_text<260>> equivalent to <selected_question_text<276>> has been removed
+    Register <selected_question_text<660>> equivalent to <selected_question_text<675>> has been removed
+    Register <selected_question_text<382>> equivalent to <selected_question_text<390>> has been removed
+    Register <selected_question_text<374>> equivalent to <selected_question_text<390>> has been removed
+    Register <selected_question_text<214>> equivalent to <selected_question_text<387>> has been removed
+    Register <selected_question_text<206>> equivalent to <selected_question_text<387>> has been removed
+    Register <selected_question_text<421>> equivalent to <selected_question_text<702>> has been removed
+    Register <selected_question_text<410>> equivalent to <selected_question_text<474>> has been removed
+    Register <selected_question_text<219>> equivalent to <selected_question_text<434>> has been removed
+    Register <selected_question_text<274>> equivalent to <selected_question_text<433>> has been removed
+    Register <selected_question_text<488>> equivalent to <selected_question_text<494>> has been removed
+    Register <selected_question_text<426>> equivalent to <selected_question_text<427>> has been removed
+    Register <selected_question_text<254>> equivalent to <selected_question_text<262>> has been removed
+    Register <selected_question_text<188>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<145>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<144>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<142>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<139>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<136>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<130>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<120>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<115>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<98>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<56>> equivalent to <selected_question_text<252>> has been removed
+    Register <selected_question_text<248>> equivalent to <selected_question_text<251>> has been removed
+    Register <selected_question_text<195>> equivalent to <selected_question_text<204>> has been removed
+    Register <selected_question_text<202>> equivalent to <selected_question_text<628>> has been removed
+    Register <selected_question_text<621>> equivalent to <selected_question_text<661>> has been removed
+    Register <selected_question_text<541>> equivalent to <selected_question_text<661>> has been removed
+    Register <selected_question_text<333>> equivalent to <selected_question_text<661>> has been removed
+    Register <selected_question_text<261>> equivalent to <selected_question_text<661>> has been removed
+    Register <selected_question_text<170>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<160>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<150>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<147>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<134>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<126>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<123>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<114>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<104>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<81>> equivalent to <selected_question_text<172>> has been removed
+    Register <selected_question_text<118>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<112>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<110>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<102>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<99>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<94>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<90>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<86>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<83>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<78>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<72>> equivalent to <selected_question_text<270>> has been removed
+    Register <selected_question_text<197>> equivalent to <selected_question_text<269>> has been removed
+    Register <selected_question_text<178>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<166>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<162>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<161>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<158>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<152>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<105>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<96>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<92>> equivalent to <selected_question_text<265>> has been removed
+    Register <selected_question_text<357>> equivalent to <selected_question_text<445>> has been removed
+    Register <selected_question_text<182>> equivalent to <selected_question_text<187>> has been removed
+    Register <selected_question_text<176>> equivalent to <selected_question_text<187>> has been removed
+    Register <selected_question_text<174>> equivalent to <selected_question_text<187>> has been removed
+    Register <selected_question_text<662>> equivalent to <selected_question_text<718>> has been removed
+    Register <selected_question_text<637>> equivalent to <selected_question_text<718>> has been removed
+    Register <selected_question_text<565>> equivalent to <selected_question_text<718>> has been removed
+    Register <selected_question_text<211>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<164>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<146>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<129>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<122>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<107>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<82>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<76>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<75>> equivalent to <selected_question_text<514>> has been removed
+    Register <selected_question_text<786>> equivalent to <selected_question_text<788>> has been removed
+    Register <selected_question_text<356>> equivalent to <selected_question_text<788>> has been removed
+    Found 1-bit register for signal <selected_question_text<813>>.
+    Found 1-bit register for signal <selected_question_text<811>>.
+    Found 1-bit register for signal <selected_question_text<810>>.
+    Found 1-bit register for signal <selected_question_text<809>>.
+    Found 1-bit register for signal <selected_question_text<808>>.
+    Found 1-bit register for signal <selected_question_text<804>>.
+    Found 1-bit register for signal <selected_question_text<803>>.
+    Found 1-bit register for signal <selected_question_text<802>>.
+    Found 1-bit register for signal <selected_question_text<801>>.
+    Found 1-bit register for signal <selected_question_text<800>>.
+    Found 1-bit register for signal <selected_question_text<788>>.
+    Found 1-bit register for signal <selected_question_text<787>>.
+    Found 1-bit register for signal <selected_question_text<785>>.
+    Found 1-bit register for signal <selected_question_text<784>>.
+    Found 1-bit register for signal <selected_question_text<782>>.
+    Found 1-bit register for signal <selected_question_text<780>>.
+    Found 1-bit register for signal <selected_question_text<779>>.
+    Found 1-bit register for signal <selected_question_text<778>>.
+    Found 1-bit register for signal <selected_question_text<777>>.
+    Found 1-bit register for signal <selected_question_text<776>>.
+    Found 1-bit register for signal <selected_question_text<774>>.
+    Found 1-bit register for signal <selected_question_text<772>>.
+    Found 1-bit register for signal <selected_question_text<771>>.
+    Found 1-bit register for signal <selected_question_text<770>>.
+    Found 1-bit register for signal <selected_question_text<769>>.
+    Found 1-bit register for signal <selected_question_text<768>>.
+    Found 1-bit register for signal <selected_question_text<766>>.
+    Found 1-bit register for signal <selected_question_text<764>>.
+    Found 1-bit register for signal <selected_question_text<763>>.
+    Found 1-bit register for signal <selected_question_text<762>>.
+    Found 1-bit register for signal <selected_question_text<761>>.
+    Found 1-bit register for signal <selected_question_text<760>>.
+    Found 1-bit register for signal <selected_question_text<758>>.
+    Found 1-bit register for signal <selected_question_text<756>>.
+    Found 1-bit register for signal <selected_question_text<755>>.
+    Found 1-bit register for signal <selected_question_text<754>>.
+    Found 1-bit register for signal <selected_question_text<753>>.
+    Found 1-bit register for signal <selected_question_text<752>>.
+    Found 1-bit register for signal <selected_question_text<750>>.
+    Found 1-bit register for signal <selected_question_text<748>>.
+    Found 1-bit register for signal <selected_question_text<747>>.
+    Found 1-bit register for signal <selected_question_text<746>>.
+    Found 1-bit register for signal <selected_question_text<745>>.
+    Found 1-bit register for signal <selected_question_text<744>>.
+    Found 1-bit register for signal <selected_question_text<742>>.
+    Found 1-bit register for signal <selected_question_text<740>>.
+    Found 1-bit register for signal <selected_question_text<739>>.
+    Found 1-bit register for signal <selected_question_text<738>>.
+    Found 1-bit register for signal <selected_question_text<737>>.
+    Found 1-bit register for signal <selected_question_text<736>>.
+    Found 1-bit register for signal <selected_question_text<732>>.
+    Found 1-bit register for signal <selected_question_text<731>>.
+    Found 1-bit register for signal <selected_question_text<730>>.
+    Found 1-bit register for signal <selected_question_text<729>>.
+    Found 1-bit register for signal <selected_question_text<728>>.
+    Found 1-bit register for signal <selected_question_text<724>>.
+    Found 1-bit register for signal <selected_question_text<723>>.
+    Found 1-bit register for signal <selected_question_text<722>>.
+    Found 1-bit register for signal <selected_question_text<721>>.
+    Found 1-bit register for signal <selected_question_text<720>>.
+    Found 1-bit register for signal <selected_question_text<718>>.
+    Found 1-bit register for signal <selected_question_text<716>>.
+    Found 1-bit register for signal <selected_question_text<715>>.
+    Found 1-bit register for signal <selected_question_text<714>>.
+    Found 1-bit register for signal <selected_question_text<713>>.
+    Found 1-bit register for signal <selected_question_text<712>>.
+    Found 1-bit register for signal <selected_question_text<710>>.
+    Found 1-bit register for signal <selected_question_text<708>>.
+    Found 1-bit register for signal <selected_question_text<707>>.
+    Found 1-bit register for signal <selected_question_text<706>>.
+    Found 1-bit register for signal <selected_question_text<705>>.
+    Found 1-bit register for signal <selected_question_text<704>>.
+    Found 1-bit register for signal <selected_question_text<702>>.
+    Found 1-bit register for signal <selected_question_text<700>>.
+    Found 1-bit register for signal <selected_question_text<699>>.
+    Found 1-bit register for signal <selected_question_text<698>>.
+    Found 1-bit register for signal <selected_question_text<697>>.
+    Found 1-bit register for signal <selected_question_text<696>>.
+    Found 1-bit register for signal <selected_question_text<694>>.
+    Found 1-bit register for signal <selected_question_text<692>>.
+    Found 1-bit register for signal <selected_question_text<691>>.
+    Found 1-bit register for signal <selected_question_text<690>>.
+    Found 1-bit register for signal <selected_question_text<689>>.
+    Found 1-bit register for signal <selected_question_text<688>>.
+    Found 1-bit register for signal <selected_question_text<686>>.
+    Found 1-bit register for signal <selected_question_text<684>>.
+    Found 1-bit register for signal <selected_question_text<683>>.
+    Found 1-bit register for signal <selected_question_text<682>>.
+    Found 1-bit register for signal <selected_question_text<681>>.
+    Found 1-bit register for signal <selected_question_text<680>>.
+    Found 1-bit register for signal <selected_question_text<678>>.
+    Found 1-bit register for signal <selected_question_text<676>>.
+    Found 1-bit register for signal <selected_question_text<675>>.
+    Found 1-bit register for signal <selected_question_text<674>>.
+    Found 1-bit register for signal <selected_question_text<673>>.
+    Found 1-bit register for signal <selected_question_text<672>>.
+    Found 1-bit register for signal <selected_question_text<670>>.
+    Found 1-bit register for signal <selected_question_text<668>>.
+    Found 1-bit register for signal <selected_question_text<667>>.
+    Found 1-bit register for signal <selected_question_text<666>>.
+    Found 1-bit register for signal <selected_question_text<665>>.
+    Found 1-bit register for signal <selected_question_text<664>>.
+    Found 1-bit register for signal <selected_question_text<661>>.
+    Found 1-bit register for signal <selected_question_text<659>>.
+    Found 1-bit register for signal <selected_question_text<658>>.
+    Found 1-bit register for signal <selected_question_text<657>>.
+    Found 1-bit register for signal <selected_question_text<656>>.
+    Found 1-bit register for signal <selected_question_text<654>>.
+    Found 1-bit register for signal <selected_question_text<652>>.
+    Found 1-bit register for signal <selected_question_text<651>>.
+    Found 1-bit register for signal <selected_question_text<650>>.
+    Found 1-bit register for signal <selected_question_text<649>>.
+    Found 1-bit register for signal <selected_question_text<648>>.
+    Found 1-bit register for signal <selected_question_text<646>>.
+    Found 1-bit register for signal <selected_question_text<644>>.
+    Found 1-bit register for signal <selected_question_text<643>>.
+    Found 1-bit register for signal <selected_question_text<642>>.
+    Found 1-bit register for signal <selected_question_text<641>>.
+    Found 1-bit register for signal <selected_question_text<640>>.
+    Found 1-bit register for signal <selected_question_text<636>>.
+    Found 1-bit register for signal <selected_question_text<635>>.
+    Found 1-bit register for signal <selected_question_text<634>>.
+    Found 1-bit register for signal <selected_question_text<633>>.
+    Found 1-bit register for signal <selected_question_text<632>>.
+    Found 1-bit register for signal <selected_question_text<630>>.
+    Found 1-bit register for signal <selected_question_text<628>>.
+    Found 1-bit register for signal <selected_question_text<627>>.
+    Found 1-bit register for signal <selected_question_text<626>>.
+    Found 1-bit register for signal <selected_question_text<625>>.
+    Found 1-bit register for signal <selected_question_text<624>>.
+    Found 1-bit register for signal <selected_question_text<622>>.
+    Found 1-bit register for signal <selected_question_text<620>>.
+    Found 1-bit register for signal <selected_question_text<619>>.
+    Found 1-bit register for signal <selected_question_text<618>>.
+    Found 1-bit register for signal <selected_question_text<617>>.
+    Found 1-bit register for signal <selected_question_text<616>>.
+    Found 1-bit register for signal <selected_question_text<614>>.
+    Found 1-bit register for signal <selected_question_text<612>>.
+    Found 1-bit register for signal <selected_question_text<611>>.
+    Found 1-bit register for signal <selected_question_text<610>>.
+    Found 1-bit register for signal <selected_question_text<609>>.
+    Found 1-bit register for signal <selected_question_text<608>>.
+    Found 1-bit register for signal <selected_question_text<606>>.
+    Found 1-bit register for signal <selected_question_text<604>>.
+    Found 1-bit register for signal <selected_question_text<603>>.
+    Found 1-bit register for signal <selected_question_text<602>>.
+    Found 1-bit register for signal <selected_question_text<601>>.
+    Found 1-bit register for signal <selected_question_text<600>>.
+    Found 1-bit register for signal <selected_question_text<598>>.
+    Found 1-bit register for signal <selected_question_text<596>>.
+    Found 1-bit register for signal <selected_question_text<595>>.
+    Found 1-bit register for signal <selected_question_text<594>>.
+    Found 1-bit register for signal <selected_question_text<593>>.
+    Found 1-bit register for signal <selected_question_text<592>>.
+    Found 1-bit register for signal <selected_question_text<590>>.
+    Found 1-bit register for signal <selected_question_text<588>>.
+    Found 1-bit register for signal <selected_question_text<587>>.
+    Found 1-bit register for signal <selected_question_text<586>>.
+    Found 1-bit register for signal <selected_question_text<585>>.
+    Found 1-bit register for signal <selected_question_text<584>>.
+    Found 1-bit register for signal <selected_question_text<582>>.
+    Found 1-bit register for signal <selected_question_text<581>>.
+    Found 1-bit register for signal <selected_question_text<580>>.
+    Found 1-bit register for signal <selected_question_text<579>>.
+    Found 1-bit register for signal <selected_question_text<578>>.
+    Found 1-bit register for signal <selected_question_text<577>>.
+    Found 1-bit register for signal <selected_question_text<576>>.
+    Found 1-bit register for signal <selected_question_text<574>>.
+    Found 1-bit register for signal <selected_question_text<572>>.
+    Found 1-bit register for signal <selected_question_text<571>>.
+    Found 1-bit register for signal <selected_question_text<570>>.
+    Found 1-bit register for signal <selected_question_text<569>>.
+    Found 1-bit register for signal <selected_question_text<568>>.
+    Found 1-bit register for signal <selected_question_text<566>>.
+    Found 1-bit register for signal <selected_question_text<564>>.
+    Found 1-bit register for signal <selected_question_text<563>>.
+    Found 1-bit register for signal <selected_question_text<562>>.
+    Found 1-bit register for signal <selected_question_text<561>>.
+    Found 1-bit register for signal <selected_question_text<560>>.
+    Found 1-bit register for signal <selected_question_text<558>>.
+    Found 1-bit register for signal <selected_question_text<556>>.
+    Found 1-bit register for signal <selected_question_text<555>>.
+    Found 1-bit register for signal <selected_question_text<554>>.
+    Found 1-bit register for signal <selected_question_text<553>>.
+    Found 1-bit register for signal <selected_question_text<552>>.
+    Found 1-bit register for signal <selected_question_text<550>>.
+    Found 1-bit register for signal <selected_question_text<549>>.
+    Found 1-bit register for signal <selected_question_text<548>>.
+    Found 1-bit register for signal <selected_question_text<547>>.
+    Found 1-bit register for signal <selected_question_text<546>>.
+    Found 1-bit register for signal <selected_question_text<545>>.
+    Found 1-bit register for signal <selected_question_text<544>>.
+    Found 1-bit register for signal <selected_question_text<542>>.
+    Found 1-bit register for signal <selected_question_text<540>>.
+    Found 1-bit register for signal <selected_question_text<539>>.
+    Found 1-bit register for signal <selected_question_text<538>>.
+    Found 1-bit register for signal <selected_question_text<537>>.
+    Found 1-bit register for signal <selected_question_text<536>>.
+    Found 1-bit register for signal <selected_question_text<534>>.
+    Found 1-bit register for signal <selected_question_text<532>>.
+    Found 1-bit register for signal <selected_question_text<531>>.
+    Found 1-bit register for signal <selected_question_text<530>>.
+    Found 1-bit register for signal <selected_question_text<529>>.
+    Found 1-bit register for signal <selected_question_text<528>>.
+    Found 1-bit register for signal <selected_question_text<526>>.
+    Found 1-bit register for signal <selected_question_text<524>>.
+    Found 1-bit register for signal <selected_question_text<523>>.
+    Found 1-bit register for signal <selected_question_text<522>>.
+    Found 1-bit register for signal <selected_question_text<521>>.
+    Found 1-bit register for signal <selected_question_text<520>>.
+    Found 1-bit register for signal <selected_question_text<518>>.
+    Found 1-bit register for signal <selected_question_text<516>>.
+    Found 1-bit register for signal <selected_question_text<515>>.
+    Found 1-bit register for signal <selected_question_text<514>>.
+    Found 1-bit register for signal <selected_question_text<513>>.
+    Found 1-bit register for signal <selected_question_text<512>>.
+    Found 1-bit register for signal <selected_question_text<510>>.
+    Found 1-bit register for signal <selected_question_text<509>>.
+    Found 1-bit register for signal <selected_question_text<508>>.
+    Found 1-bit register for signal <selected_question_text<507>>.
+    Found 1-bit register for signal <selected_question_text<506>>.
+    Found 1-bit register for signal <selected_question_text<505>>.
+    Found 1-bit register for signal <selected_question_text<504>>.
+    Found 1-bit register for signal <selected_question_text<502>>.
+    Found 1-bit register for signal <selected_question_text<501>>.
+    Found 1-bit register for signal <selected_question_text<500>>.
+    Found 1-bit register for signal <selected_question_text<499>>.
+    Found 1-bit register for signal <selected_question_text<498>>.
+    Found 1-bit register for signal <selected_question_text<497>>.
+    Found 1-bit register for signal <selected_question_text<496>>.
+    Found 1-bit register for signal <selected_question_text<494>>.
+    Found 1-bit register for signal <selected_question_text<492>>.
+    Found 1-bit register for signal <selected_question_text<491>>.
+    Found 1-bit register for signal <selected_question_text<490>>.
+    Found 1-bit register for signal <selected_question_text<489>>.
+    Found 1-bit register for signal <selected_question_text<486>>.
+    Found 1-bit register for signal <selected_question_text<485>>.
+    Found 1-bit register for signal <selected_question_text<484>>.
+    Found 1-bit register for signal <selected_question_text<483>>.
+    Found 1-bit register for signal <selected_question_text<482>>.
+    Found 1-bit register for signal <selected_question_text<481>>.
+    Found 1-bit register for signal <selected_question_text<480>>.
+    Found 1-bit register for signal <selected_question_text<478>>.
+    Found 1-bit register for signal <selected_question_text<476>>.
+    Found 1-bit register for signal <selected_question_text<475>>.
+    Found 1-bit register for signal <selected_question_text<474>>.
+    Found 1-bit register for signal <selected_question_text<473>>.
+    Found 1-bit register for signal <selected_question_text<472>>.
+    Found 1-bit register for signal <selected_question_text<470>>.
+    Found 1-bit register for signal <selected_question_text<468>>.
+    Found 1-bit register for signal <selected_question_text<467>>.
+    Found 1-bit register for signal <selected_question_text<466>>.
+    Found 1-bit register for signal <selected_question_text<465>>.
+    Found 1-bit register for signal <selected_question_text<464>>.
+    Found 1-bit register for signal <selected_question_text<462>>.
+    Found 1-bit register for signal <selected_question_text<460>>.
+    Found 1-bit register for signal <selected_question_text<459>>.
+    Found 1-bit register for signal <selected_question_text<458>>.
+    Found 1-bit register for signal <selected_question_text<457>>.
+    Found 1-bit register for signal <selected_question_text<456>>.
+    Found 1-bit register for signal <selected_question_text<454>>.
+    Found 1-bit register for signal <selected_question_text<452>>.
+    Found 1-bit register for signal <selected_question_text<451>>.
+    Found 1-bit register for signal <selected_question_text<450>>.
+    Found 1-bit register for signal <selected_question_text<449>>.
+    Found 1-bit register for signal <selected_question_text<448>>.
+    Found 1-bit register for signal <selected_question_text<446>>.
+    Found 1-bit register for signal <selected_question_text<445>>.
+    Found 1-bit register for signal <selected_question_text<444>>.
+    Found 1-bit register for signal <selected_question_text<443>>.
+    Found 1-bit register for signal <selected_question_text<442>>.
+    Found 1-bit register for signal <selected_question_text<441>>.
+    Found 1-bit register for signal <selected_question_text<440>>.
+    Found 1-bit register for signal <selected_question_text<438>>.
+    Found 1-bit register for signal <selected_question_text<436>>.
+    Found 1-bit register for signal <selected_question_text<435>>.
+    Found 1-bit register for signal <selected_question_text<434>>.
+    Found 1-bit register for signal <selected_question_text<433>>.
+    Found 1-bit register for signal <selected_question_text<432>>.
+    Found 1-bit register for signal <selected_question_text<430>>.
+    Found 1-bit register for signal <selected_question_text<429>>.
+    Found 1-bit register for signal <selected_question_text<428>>.
+    Found 1-bit register for signal <selected_question_text<427>>.
+    Found 1-bit register for signal <selected_question_text<425>>.
+    Found 1-bit register for signal <selected_question_text<424>>.
+    Found 1-bit register for signal <selected_question_text<422>>.
+    Found 1-bit register for signal <selected_question_text<420>>.
+    Found 1-bit register for signal <selected_question_text<419>>.
+    Found 1-bit register for signal <selected_question_text<418>>.
+    Found 1-bit register for signal <selected_question_text<417>>.
+    Found 1-bit register for signal <selected_question_text<416>>.
+    Found 1-bit register for signal <selected_question_text<412>>.
+    Found 1-bit register for signal <selected_question_text<411>>.
+    Found 1-bit register for signal <selected_question_text<409>>.
+    Found 1-bit register for signal <selected_question_text<408>>.
+    Found 1-bit register for signal <selected_question_text<406>>.
+    Found 1-bit register for signal <selected_question_text<405>>.
+    Found 1-bit register for signal <selected_question_text<404>>.
+    Found 1-bit register for signal <selected_question_text<403>>.
+    Found 1-bit register for signal <selected_question_text<402>>.
+    Found 1-bit register for signal <selected_question_text<401>>.
+    Found 1-bit register for signal <selected_question_text<400>>.
+    Found 1-bit register for signal <selected_question_text<398>>.
+    Found 1-bit register for signal <selected_question_text<397>>.
+    Found 1-bit register for signal <selected_question_text<395>>.
+    Found 1-bit register for signal <selected_question_text<394>>.
+    Found 1-bit register for signal <selected_question_text<393>>.
+    Found 1-bit register for signal <selected_question_text<392>>.
+    Found 1-bit register for signal <selected_question_text<390>>.
+    Found 1-bit register for signal <selected_question_text<388>>.
+    Found 1-bit register for signal <selected_question_text<387>>.
+    Found 1-bit register for signal <selected_question_text<386>>.
+    Found 1-bit register for signal <selected_question_text<385>>.
+    Found 1-bit register for signal <selected_question_text<384>>.
+    Found 1-bit register for signal <selected_question_text<380>>.
+    Found 1-bit register for signal <selected_question_text<379>>.
+    Found 1-bit register for signal <selected_question_text<378>>.
+    Found 1-bit register for signal <selected_question_text<377>>.
+    Found 1-bit register for signal <selected_question_text<376>>.
+    Found 1-bit register for signal <selected_question_text<371>>.
+    Found 1-bit register for signal <selected_question_text<370>>.
+    Found 1-bit register for signal <selected_question_text<369>>.
+    Found 1-bit register for signal <selected_question_text<368>>.
+    Found 1-bit register for signal <selected_question_text<366>>.
+    Found 1-bit register for signal <selected_question_text<365>>.
+    Found 1-bit register for signal <selected_question_text<364>>.
+    Found 1-bit register for signal <selected_question_text<363>>.
+    Found 1-bit register for signal <selected_question_text<362>>.
+    Found 1-bit register for signal <selected_question_text<361>>.
+    Found 1-bit register for signal <selected_question_text<360>>.
+    Found 1-bit register for signal <selected_question_text<358>>.
+    Found 1-bit register for signal <selected_question_text<355>>.
+    Found 1-bit register for signal <selected_question_text<354>>.
+    Found 1-bit register for signal <selected_question_text<353>>.
+    Found 1-bit register for signal <selected_question_text<352>>.
+    Found 1-bit register for signal <selected_question_text<348>>.
+    Found 1-bit register for signal <selected_question_text<346>>.
+    Found 1-bit register for signal <selected_question_text<345>>.
+    Found 1-bit register for signal <selected_question_text<344>>.
+    Found 1-bit register for signal <selected_question_text<340>>.
+    Found 1-bit register for signal <selected_question_text<339>>.
+    Found 1-bit register for signal <selected_question_text<338>>.
+    Found 1-bit register for signal <selected_question_text<336>>.
+    Found 1-bit register for signal <selected_question_text<334>>.
+    Found 1-bit register for signal <selected_question_text<332>>.
+    Found 1-bit register for signal <selected_question_text<331>>.
+    Found 1-bit register for signal <selected_question_text<329>>.
+    Found 1-bit register for signal <selected_question_text<328>>.
+    Found 1-bit register for signal <selected_question_text<326>>.
+    Found 1-bit register for signal <selected_question_text<324>>.
+    Found 1-bit register for signal <selected_question_text<323>>.
+    Found 1-bit register for signal <selected_question_text<322>>.
+    Found 1-bit register for signal <selected_question_text<321>>.
+    Found 1-bit register for signal <selected_question_text<320>>.
+    Found 1-bit register for signal <selected_question_text<318>>.
+    Found 1-bit register for signal <selected_question_text<316>>.
+    Found 1-bit register for signal <selected_question_text<315>>.
+    Found 1-bit register for signal <selected_question_text<314>>.
+    Found 1-bit register for signal <selected_question_text<313>>.
+    Found 1-bit register for signal <selected_question_text<312>>.
+    Found 1-bit register for signal <selected_question_text<310>>.
+    Found 1-bit register for signal <selected_question_text<309>>.
+    Found 1-bit register for signal <selected_question_text<308>>.
+    Found 1-bit register for signal <selected_question_text<307>>.
+    Found 1-bit register for signal <selected_question_text<306>>.
+    Found 1-bit register for signal <selected_question_text<305>>.
+    Found 1-bit register for signal <selected_question_text<304>>.
+    Found 1-bit register for signal <selected_question_text<302>>.
+    Found 1-bit register for signal <selected_question_text<301>>.
+    Found 1-bit register for signal <selected_question_text<300>>.
+    Found 1-bit register for signal <selected_question_text<299>>.
+    Found 1-bit register for signal <selected_question_text<298>>.
+    Found 1-bit register for signal <selected_question_text<297>>.
+    Found 1-bit register for signal <selected_question_text<296>>.
+    Found 1-bit register for signal <selected_question_text<294>>.
+    Found 1-bit register for signal <selected_question_text<292>>.
+    Found 1-bit register for signal <selected_question_text<291>>.
+    Found 1-bit register for signal <selected_question_text<290>>.
+    Found 1-bit register for signal <selected_question_text<289>>.
+    Found 1-bit register for signal <selected_question_text<288>>.
+    Found 1-bit register for signal <selected_question_text<286>>.
+    Found 1-bit register for signal <selected_question_text<284>>.
+    Found 1-bit register for signal <selected_question_text<283>>.
+    Found 1-bit register for signal <selected_question_text<282>>.
+    Found 1-bit register for signal <selected_question_text<281>>.
+    Found 1-bit register for signal <selected_question_text<280>>.
+    Found 1-bit register for signal <selected_question_text<278>>.
+    Found 1-bit register for signal <selected_question_text<276>>.
+    Found 1-bit register for signal <selected_question_text<275>>.
+    Found 1-bit register for signal <selected_question_text<273>>.
+    Found 1-bit register for signal <selected_question_text<272>>.
+    Found 1-bit register for signal <selected_question_text<270>>.
+    Found 1-bit register for signal <selected_question_text<269>>.
+    Found 1-bit register for signal <selected_question_text<268>>.
+    Found 1-bit register for signal <selected_question_text<265>>.
+    Found 1-bit register for signal <selected_question_text<262>>.
+    Found 1-bit register for signal <selected_question_text<256>>.
+    Found 1-bit register for signal <selected_question_text<252>>.
+    Found 1-bit register for signal <selected_question_text<251>>.
+    Found 1-bit register for signal <selected_question_text<250>>.
+    Found 1-bit register for signal <selected_question_text<249>>.
+    Found 1-bit register for signal <selected_question_text<246>>.
+    Found 1-bit register for signal <selected_question_text<245>>.
+    Found 1-bit register for signal <selected_question_text<244>>.
+    Found 1-bit register for signal <selected_question_text<243>>.
+    Found 1-bit register for signal <selected_question_text<242>>.
+    Found 1-bit register for signal <selected_question_text<241>>.
+    Found 1-bit register for signal <selected_question_text<240>>.
+    Found 1-bit register for signal <selected_question_text<238>>.
+    Found 1-bit register for signal <selected_question_text<237>>.
+    Found 1-bit register for signal <selected_question_text<236>>.
+    Found 1-bit register for signal <selected_question_text<235>>.
+    Found 1-bit register for signal <selected_question_text<234>>.
+    Found 1-bit register for signal <selected_question_text<233>>.
+    Found 1-bit register for signal <selected_question_text<232>>.
+    Found 1-bit register for signal <selected_question_text<230>>.
+    Found 1-bit register for signal <selected_question_text<228>>.
+    Found 1-bit register for signal <selected_question_text<227>>.
+    Found 1-bit register for signal <selected_question_text<226>>.
+    Found 1-bit register for signal <selected_question_text<225>>.
+    Found 1-bit register for signal <selected_question_text<224>>.
+    Found 1-bit register for signal <selected_question_text<222>>.
+    Found 1-bit register for signal <selected_question_text<220>>.
+    Found 1-bit register for signal <selected_question_text<218>>.
+    Found 1-bit register for signal <selected_question_text<217>>.
+    Found 1-bit register for signal <selected_question_text<216>>.
+    Found 1-bit register for signal <selected_question_text<213>>.
+    Found 1-bit register for signal <selected_question_text<212>>.
+    Found 1-bit register for signal <selected_question_text<210>>.
+    Found 1-bit register for signal <selected_question_text<208>>.
+    Found 1-bit register for signal <selected_question_text<204>>.
+    Found 1-bit register for signal <selected_question_text<200>>.
+    Found 1-bit register for signal <selected_question_text<198>>.
+    Found 1-bit register for signal <selected_question_text<196>>.
+    Found 1-bit register for signal <selected_question_text<194>>.
+    Found 1-bit register for signal <selected_question_text<192>>.
+    Found 1-bit register for signal <selected_question_text<190>>.
+    Found 1-bit register for signal <selected_question_text<187>>.
+    Found 1-bit register for signal <selected_question_text<186>>.
+    Found 1-bit register for signal <selected_question_text<179>>.
+    Found 1-bit register for signal <selected_question_text<172>>.
+    Found 1-bit register for signal <CORRECT_OUT>.
+    Found 1-bit register for signal <COUNT_OUT>.
+    Found 4-bit register for signal <current_question_index>.
+    Found 4-bit adder for signal <NUMBER[7]_GND_4_o_add_1_OUT> created at line 87.
+    Found 16x3-bit Read Only RAM for signal <current_question_index[3]_GND_4_o_wide_mux_19505_OUT>
+    Found 16x440-bit Read Only RAM for signal <_n1725>
+    Found 3-bit comparator equal for signal <current_question_index[3]_GND_4_o_equal_19507_o> created at line 126
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<814><0:0>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<807><814:814>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<806><807:807>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<799><806:806>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<798><799:799>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<791><798:798>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<783><791:791>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<775><783:783>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<767><775:775>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<759><767:767>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<751><759:759>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<743><751:751>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<735><743:743>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<727><735:735>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<719><727:727>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<711><719:719>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<703><711:711>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<695><703:703>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<687><695:695>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<679><687:687>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<671><679:679>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<663><671:671>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<655><663:663>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<647><655:655>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<639><647:647>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<631><639:639>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<623><631:631>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<615><623:623>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<607><615:615>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<599><607:607>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<591><599:599>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<583><591:591>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<575><583:583>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<567><575:575>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<559><567:567>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<551><559:559>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<543><551:551>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<535><543:543>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<527><535:535>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<519><527:527>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<511><519:519>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<503><511:511>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<495><503:503>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<487><495:495>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<479><487:487>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<471><479:479>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<463><471:471>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<455><463:463>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<447><455:455>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<439><447:447>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<431><439:439>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<423><431:431>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<415><423:423>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<407><415:415>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<399><407:407>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<391><399:399>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<383><391:391>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<375><383:383>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<367><375:375>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<359><367:367>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<351><359:359>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<343><351:351>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<335><343:343>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<327><335:335>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<319><327:327>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<311><319:319>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<303><311:311>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<295><303:303>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<287><295:295>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<279><287:287>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<271><279:279>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<263><271:271>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<255><263:263>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<247><255:255>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<239><247:247>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<231><239:239>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<223><231:231>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<215><223:223>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<207><215:215>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<199><207:207>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<191><199:199>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<183><191:191>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<175><183:183>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<167><175:175>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<159><167:167>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<151><159:159>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<143><151:151>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<135><143:143>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<127><135:135>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<119><127:127>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<111><119:119>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<103><111:111>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<95><103:103>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<87><95:95>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<79><87:87>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<71><79:79>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<63><71:71>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<55><63:63>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<47><55:55>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<46><47:47>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<44><46:46>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<43><44:44>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<42><43:43>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<41><42:42>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<40><41:41>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<39><40:40>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<38><39:39>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<36><38:38>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<35><36:36>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<34><35:35>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<33><34:34>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<32><33:33>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<31><32:32>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<30><31:31>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<28><30:30>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<27><28:28>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<26><27:27>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<25><26:26>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<24><25:25>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<23><24:24>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<22><23:23>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<20><22:22>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<19><20:20>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<18><19:19>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<17><18:18>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<16><17:17>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<815><16:16>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<796><0:0>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<792><796:796>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<396><792:792>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<267><396:396>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<180><267:267>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<154><180:180>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<153><154:154>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<148><153:153>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<137><148:148>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<132><137:137>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<124><132:132>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<121><124:124>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<116><121:121>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<113><116:116>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<106><113:113>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<100><106:106>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<91><100:100>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<89><91:91>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<88><89:89>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<74><88:88>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<66><74:74>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<64><66:66>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<60><64:64>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<50><60:60>> (without init value) have a constant value of 0 in block <QUIZ>.
+    WARNING:Xst:2404 -  FFs/Latches <selected_question_text<49><50:50>> (without init value) have a constant value of 0 in block <QUIZ>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred 447 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <QUIZ> synthesized.
+
+Synthesizing Unit <mod_8u_4u>.
+    Related source file is "".
+    Found 12-bit adder for signal <GND_5_o_b[3]_add_1_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_5_o_b[3]_add_3_OUT> created at line 0.
+    Found 10-bit adder for signal <GND_5_o_b[3]_add_5_OUT> created at line 0.
+    Found 9-bit adder for signal <GND_5_o_b[3]_add_7_OUT> created at line 0.
+    Found 8-bit adder for signal <a[7]_b[3]_add_9_OUT> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_5_o_add_11_OUT> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_5_o_add_13_OUT> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_5_o_add_15_OUT> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_5_o_add_17_OUT> created at line 0.
+    Found 12-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  65 Multiplexer(s).
+Unit <mod_8u_4u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x3-bit single-port Read Only RAM                    : 1
+ 16x440-bit single-port Read Only RAM                  : 1
+# Adders/Subtractors                                   : 10
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 12-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 5
+ 9-bit adder                                           : 1
+# Registers                                            : 444
+ 1-bit register                                        : 443
+ 4-bit register                                        : 1
+# Comparators                                          : 10
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator lessequal                           : 1
+ 3-bit comparator equal                                : 1
+ 8-bit comparator lessequal                            : 5
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 65
+ 1-bit 2-to-1 multiplexer                              : 64
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <QUIZ>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_current_question_index[3]_GND_4_o_wide_mux_19505_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <current_question_index> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1725> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 440-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <NUMBER[7]_GND_4_o_add_1_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <QUIZ> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x3-bit single-port distributed Read Only RAM        : 1
+ 16x440-bit single-port distributed Read Only RAM      : 1
+# Adders/Subtractors                                   : 10
+ 4-bit adder                                           : 2
+ 8-bit adder                                           : 8
+# Registers                                            : 447
+ Flip-Flops                                            : 447
+# Comparators                                          : 10
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator lessequal                           : 1
+ 3-bit comparator equal                                : 1
+ 8-bit comparator lessequal                            : 5
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 65
+ 1-bit 2-to-1 multiplexer                              : 64
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <QUIZ> ...
+
+Optimizing unit <mod_8u_4u> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block QUIZ, actual ratio is 7.
+FlipFlop selected_question_text_813 has been replicated 60 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_804 has been replicated 4 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_803 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_788 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_782 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_774 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_718 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_702 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_694 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_684 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_675 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_661 has been replicated 4 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_628 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_610 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_549 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_548 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_514 has been replicated 9 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_494 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_485 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_474 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_445 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_434 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_433 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_427 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_422 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_411 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_408 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_405 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_397 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_390 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_387 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_378 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_358 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_353 has been replicated 15 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_334 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_306 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_304 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_290 has been replicated 18 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_276 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_273 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_270 has been replicated 11 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_269 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_265 has been replicated 9 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_262 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_252 has been replicated 11 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_251 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_244 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_213 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_204 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_187 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop selected_question_text_172 has been replicated 10 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 654
+ Flip-Flops                                            : 654
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : QUIZ.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 600
+#      GND                         : 1
+#      LUT2                        : 7
+#      LUT3                        : 20
+#      LUT4                        : 553
+#      MUXF5                       : 18
+#      VCC                         : 1
+# FlipFlops/Latches                : 654
+#      FDC                         : 653
+#      FDP                         : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 835
+#      IBUF                        : 17
+#      OBUF                        : 818
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                      341  out of   4656     7%  
+ Number of Slice Flip Flops:              4  out of   9312     0%  
+ Number of 4 input LUTs:                580  out of   9312     6%  
+ Number of IOs:                         853
+ Number of bonded IOBs:                 837  out of     66   1268% (*) 
+    IOB Flip Flops:                     650
+ Number of GCLKs:                         2  out of     24     8%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SET                                | BUFGP                  | 652   |
+CHECK                              | BUFGP                  | 2     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 654   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 15.604ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SET'
+  Total number of paths / destination ports: 231460 / 591
+-------------------------------------------------------------------------
+Offset:              15.604ns (Levels of Logic = 12)
+  Source:            NUMBER<2> (PAD)
+  Destination:       selected_question_text_238 (FF)
+  Destination Clock: SET rising
+
+  Data Path: NUMBER<2> to selected_question_text_238
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.106   0.969  NUMBER_2_IBUF (NUMBER_2_IBUF)
+     LUT2:I0->O            2   0.612   0.532  NUMBER[7]_PWR_4_o_mod_0/BUS_0009_INV_85_o121 (NUMBER[7]_PWR_4_o_mod_0/BUS_0009_INV_85_o12)
+     LUT4:I0->O            1   0.612   0.426  NUMBER[7]_PWR_4_o_mod_0/BUS_0009_INV_85_o1111 (NUMBER[7]_PWR_4_o_mod_0/BUS_0009_INV_85_o1111)
+     LUT4:I1->O            1   0.612   0.387  NUMBER[7]_PWR_4_o_mod_0/BUS_0009_INV_85_o158_SW0 (N129)
+     LUT3:I2->O            1   0.612   0.000  NUMBER[7]_PWR_4_o_mod_0/BUS_0009_INV_85_o1100_F (N241)
+     MUXF5:I0->O          88   0.278   1.118  NUMBER[7]_PWR_4_o_mod_0/BUS_0009_INV_85_o1100 (NUMBER[7]_PWR_4_o_mod_0/BUS_0009_INV_85_o1100)
+     LUT4:I2->O            6   0.612   0.572  NUMBER[7]_PWR_4_o_mod_0/Mmux_o331 (NUMBER[7]_PWR_4_o_mod_0/Mmux_o33)
+     LUT4:I3->O           80   0.612   1.238  NUMBER[7]_PWR_4_o_mod_0/Mmux_o41 (Madd_NUMBER[7]_GND_4_o_add_1_OUT_lut<3>)
+     LUT3:I0->O          246   0.612   1.133  Madd_NUMBER[7]_GND_4_o_add_1_OUT_xor<3>11 (NUMBER[7]_GND_4_o_add_1_OUT<3>)
+     LUT4:I3->O           28   0.612   1.075  Mram__n17252541 (Mram__n1725254)
+     LUT4:I3->O            2   0.612   0.383  Mram__n1725195 (Mram__n172519)
+     LUT4:I3->O            1   0.612   0.000  Mram__n17253210 (Mram__n172532)
+     FDC:D                     0.268          selected_question_text_238
+    ----------------------------------------
+    Total                     15.604ns (7.772ns logic, 7.832ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CHECK'
+  Total number of paths / destination ports: 11 / 1
+-------------------------------------------------------------------------
+Offset:              4.586ns (Levels of Logic = 4)
+  Source:            ANSWER<0> (PAD)
+  Destination:       CORRECT_OUT (FF)
+  Destination Clock: CHECK rising
+
+  Data Path: ANSWER<0> to CORRECT_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.451  ANSWER_0_IBUF (ANSWER_0_IBUF)
+     MUXF5:S->O            1   0.641   0.509  current_question_index[3]_GND_4_o_equal_19507_o395_SW0 (N117)
+     LUT4:I0->O            1   0.612   0.387  current_question_index[3]_GND_4_o_equal_19507_o3285_SW0 (N127)
+     LUT4:I2->O            1   0.612   0.000  current_question_index[3]_GND_4_o_equal_19507_o3285 (current_question_index[3]_GND_4_o_equal_19507_o3285)
+     FDC:D                     0.268          CORRECT_OUT
+    ----------------------------------------
+    Total                      4.586ns (3.239ns logic, 1.347ns route)
+                                       (70.6% logic, 29.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SET'
+  Total number of paths / destination ports: 648 / 648
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            selected_question_text_813_1 (FF)
+  Destination:       TEXT_OUTPUT<813> (PAD)
+  Source Clock:      SET rising
+
+  Data Path: selected_question_text_813_1 to TEXT_OUTPUT<813>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.514   0.357  selected_question_text_813_1 (selected_question_text_813_1)
+     OBUF:I->O                 3.169          TEXT_OUTPUT_813_OBUF (TEXT_OUTPUT<813>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CHECK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            CORRECT_OUT (FF)
+  Destination:       CORRECT_OUT (PAD)
+  Source Clock:      CHECK rising
+
+  Data Path: CORRECT_OUT to CORRECT_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.514   0.357  CORRECT_OUT (CORRECT_OUT_OBUF)
+     OBUF:I->O                 3.169          CORRECT_OUT_OBUF (CORRECT_OUT)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CHECK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SET            |    4.482|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.98 secs
+ 
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+--> 
+
+Total memory usage is 4714340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  158 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

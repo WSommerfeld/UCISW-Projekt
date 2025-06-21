@@ -1,0 +1,81 @@
+V3 36
+FL "/home/vincent/Documents/GitHub/UCISW-Projekt/Projekt Quiz/QUIZ3.06/ps2_keyboard.vhd" 2025/06/09.20:47:11 P.20131013
+FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/QUIZ.vhd" 2025/06/03.15:37:42 P.20131013
+FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" 2025/06/03.10:42:14 P.20131013
+EN work/GeneratorLiczbLosowych 1748957407 \
+      FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/GeneratorLiczbLosowych/Behavioral 1748957408 \
+      FL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" \
+      EN work/GeneratorLiczbLosowych 1748957407
+FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard.vhd 2025/06/10.15:10:33 P.20131013
+EN work/ps2_keyboard 1749561701 \
+      FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/ps2_keyboard/Behavioral 1749561702 \
+      FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard.vhd \
+      EN work/ps2_keyboard 1749561701
+FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard1.vhd 2025/06/10.13:58:40 P.20131013
+EN work/ps2_keyboard1 1749556732 \
+      FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ps2_keyboard1/Behavioral 1749556733 \
+      FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard1.vhd \
+      EN work/ps2_keyboard1 1749556732
+FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/toseven.vhd 2025/06/10.15:19:22 P.20131013
+EN work/toseven 1749561579 FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/toseven.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/toseven/Behavioral 1749561580 \
+      FL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/toseven.vhd EN work/toseven 1749561579
+FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.vhd 2025/06/17.14:44:20 P.20131013
+EN work/INPUT_SPLIT 1750164329 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/INPUT_SPLIT/Behavioral 1750164330 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.vhd \
+      EN work/INPUT_SPLIT 1750164329
+FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/licznik.vhd 2025/06/03.10:42:16 P.20131013
+EN work/licznik 1750155201 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/licznik.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/licznik/Behavioral 1750155202 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/licznik.vhd \
+      EN work/licznik 1750155201
+FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/loop.vhd 2025/06/17.15:25:19 P.20131013
+FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/looper.vhd 2025/06/17.15:32:14 P.20131013
+EN work/looper 1750167139 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/looper.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/looper/Behavioral 1750167140 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/looper.vhd \
+      EN work/looper 1750167139
+FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/loopser.vhd 2025/06/17.15:34:11 P.20131013
+EN work/loopser 1750167260 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/loopser.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/loopser/Behavioral 1750167261 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/loopser.vhd \
+      EN work/loopser 1750167260
+FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/OUTPUT.vhd 2025/06/17.15:45:37 P.20131013
+EN work/OUTPUT 1750167971 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/OUTPUT.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/OUTPUT/Behavioral 1750167972 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/OUTPUT.vhd \
+      EN work/OUTPUT 1750167971
+FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/QUIZ.vhd 2025/06/03.15:43:32 P.20131013
+EN work/QUIZ 1750153851 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/QUIZ.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/QUIZ/Behavioral 1750153852 \
+      FL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/QUIZ.vhd \
+      EN work/QUIZ 1750153851
+FL C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/keyboard_tester.vhd 2025/06/10.13:00:17 P.20131013
+EN work/keyboard_tester 1749553228 \
+      FL C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/keyboard_tester.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/keyboard_tester/Behavioral 1749553229 \
+      FL C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/keyboard_tester.vhd \
+      EN work/keyboard_tester 1749553228

@@ -1,0 +1,34 @@
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 
+vhdtdtfi -lib work INPUT_SPLIT.vhd -prj QUIZ3.06 -o INPUT_SPLIT.spl -module INPUT_SPLIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e INPUT_SPLIT.spl C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.sym 

@@ -1,0 +1,10 @@
+[Inputs]
+clk
+reset
+ps2_clk
+ps2_data
+[Outputs]
+key_z
+key_x
+key_c
+[BiDir]

@@ -1,0 +1,3 @@
+MODULE keyboard_test1
+	SUBMODULE PS2_Kbd
+		INSTANCE XLXI_5

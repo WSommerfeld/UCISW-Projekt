@@ -1,0 +1,12 @@
+[Inputs]
+clk
+reset
+=scancode[7:0]=
+[Outputs]
+set_rng
+reset_out
+set_q
+check
+=answer[7:0]=
+=state_out[3:0]=
+[BiDir]

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/xst"
+elaborate
+-ifn keyboard_tester.prj
+-ifmt mixed

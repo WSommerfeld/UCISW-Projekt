@@ -1,0 +1,8 @@
+[Inputs]
+correct
+count
+reset
+[Outputs]
+=outcorrect[7:0]=
+=outcount[7:0]=
+[BiDir]

@@ -1,0 +1,2 @@
+vhdl work "OUTPUT.vhd"
+vhdl work "OUTPUT_tb.vhd"

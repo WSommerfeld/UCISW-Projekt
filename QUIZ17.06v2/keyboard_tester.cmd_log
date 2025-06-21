@@ -1,0 +1,2 @@
+vhdtdtfi -lib work keyboard_tester.vhd -prj QUIZ3.06 -o keyboard_tester.spl -module keyboard_tester -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e keyboard_tester.spl C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/keyboard_tester.sym 

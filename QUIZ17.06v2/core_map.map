@@ -1,0 +1,102 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'core'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off
+-c 100 -o core_map.ncd core.ngd core.pcf 
+Target Device  : xc3s500e
+Target Package : vq100
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Jun 17 15:47:29 2025
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s500e' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT55207_SW0_SW11_f5.  There
+   is a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT5254_SW0_SW11_f5.  There
+   is a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT35222_SW0_SW11_f5.  There
+   is a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT30176_SW1. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT1032 failed to merge with
+   F5 multiplexer
+   XLXI_1/Mmux_questions[14]_questions[14]_mux_132_OUT50228_SW0_SW11_f5.  There
+   is a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    5
+Logic Utilization:
+  Number of Slice Flip Flops:         1,331 out of   9,312   14%
+  Number of 4 input LUTs:             4,164 out of   9,312   44%
+Logic Distribution:
+  Number of occupied Slices:          2,305 out of   4,656   49%
+    Number of Slices containing only related logic:   2,305 out of   2,305 100%
+    Number of Slices containing unrelated logic:          0 out of   2,305   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       4,284 out of   9,312   46%
+    Number used as logic:             4,161
+    Number used as a route-thru:        120
+    Number used as Shift registers:       3
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  8 out of      66   12%
+  Number of RAMB16s:                      2 out of      20   10%
+  Number of BUFGMUXs:                     3 out of      24   12%
+
+Average Fanout of Non-Clock Nets:                4.15
+
+Peak Memory Usage:  4452 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "core_map.mrp" for details.

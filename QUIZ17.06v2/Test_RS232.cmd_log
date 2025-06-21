@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 Test_RS232.ngc Test_RS232.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_RS232_map.ncd Test_RS232.ngd Test_RS232.pcf 
+par -w -intstyle ise -ol high -t 1 Test_RS232_map.ncd Test_RS232.ncd Test_RS232.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_RS232.twx Test_RS232.ncd -o Test_RS232.twr Test_RS232.pcf 
+bitgen -intstyle ise -f Test_RS232.ut Test_RS232.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 Test_RS232.ngc Test_RS232.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_RS232_map.ncd Test_RS232.ngd Test_RS232.pcf 
+par -w -intstyle ise -ol high -t 1 Test_RS232_map.ncd Test_RS232.ncd Test_RS232.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_RS232.twx Test_RS232.ncd -o Test_RS232.twr Test_RS232.pcf 
+bitgen -intstyle ise -f Test_RS232.ut Test_RS232.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 Test_RS232.ngc Test_RS232.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_RS232_map.ncd Test_RS232.ngd Test_RS232.pcf 
+par -w -intstyle ise -ol high -t 1 Test_RS232_map.ncd Test_RS232.ncd Test_RS232.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_RS232.twx Test_RS232.ncd -o Test_RS232.twr Test_RS232.pcf 
+bitgen -intstyle ise -f Test_RS232.ut Test_RS232.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 Test_RS232.ngc Test_RS232.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_RS232_map.ncd Test_RS232.ngd Test_RS232.pcf 
+par -w -intstyle ise -ol high -t 1 Test_RS232_map.ncd Test_RS232.ncd Test_RS232.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_RS232.twx Test_RS232.ncd -o Test_RS232.twr Test_RS232.pcf 
+bitgen -intstyle ise -f Test_RS232.ut Test_RS232.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/Test_RS232.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 Test_RS232.ngc Test_RS232.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_RS232_map.ncd Test_RS232.ngd Test_RS232.pcf 
+par -w -intstyle ise -ol high -t 1 Test_RS232_map.ncd Test_RS232.ncd Test_RS232.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_RS232.twx Test_RS232.ncd -o Test_RS232.twr Test_RS232.pcf 
+bitgen -intstyle ise -f Test_RS232.ut Test_RS232.ncd 

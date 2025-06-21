@@ -1,0 +1,2 @@
+vhdl isim_temp "OUTPUT.vhd"
+vhdl isim_temp "OUTPUT_tb.vhd"

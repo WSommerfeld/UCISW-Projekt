@@ -1,0 +1,22 @@
+EN ps2_keyboard1 NULL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard1.vhd sub00/vhpl08 1749556732
+AR quiz behavioral C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/QUIZ.vhd sub00/vhpl03 1750153852
+EN input_split NULL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.vhd sub00/vhpl12 1750164329
+AR ps2_keyboard1 behavioral C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard1.vhd sub00/vhpl09 1749556733
+AR input_split behavioral C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/INPUT_SPLIT.vhd sub00/vhpl13 1750164330
+EN keyboard_tester NULL C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/keyboard_tester.vhd sub00/vhpl06 1749553228
+AR generatorliczblosowych behavioral "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" sub00/vhpl01 1748957408
+EN output NULL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/OUTPUT.vhd sub00/vhpl14 1750167971
+AR licznik behavioral C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/licznik.vhd sub00/vhpl16 1750155202
+EN ps2_keyboard NULL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard.vhd sub00/vhpl04 1749561701
+AR toseven behavioral C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/toseven.vhd sub00/vhpl11 1749561580
+AR looper behavioral C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/looper.vhd sub00/vhpl19 1750167140
+AR keyboard_tester behavioral C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/keyboard_tester.vhd sub00/vhpl07 1749553229
+EN generatorliczblosowych NULL "C:/Users/lab/Desktop/PROJEKT QUIZ 3.06/QUIZ3.06/rng.vhd" sub00/vhpl00 1748957407
+EN quiz NULL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/QUIZ.vhd sub00/vhpl02 1750153851
+AR loopser behavioral C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/loopser.vhd sub00/vhpl21 1750167261
+AR output behavioral C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/OUTPUT.vhd sub00/vhpl17 1750167972
+EN toseven NULL C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/toseven.vhd sub00/vhpl10 1749561579
+EN looper NULL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/looper.vhd sub00/vhpl18 1750167139
+EN licznik NULL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/licznik.vhd sub00/vhpl15 1750155201
+EN loopser NULL C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/loopser.vhd sub00/vhpl20 1750167260
+AR ps2_keyboard behavioral C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/ps2_keyboard.vhd sub00/vhpl05 1749561702

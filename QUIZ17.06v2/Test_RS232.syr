@@ -1,0 +1,570 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+Reading design: Test_RS232.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Test_RS232.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Test_RS232"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Use New Parser                     : yes
+Top Module Name                    : Test_RS232
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\toseven.vhd" into library work
+Parsing entity <toseven>.
+Parsing architecture <Behavioral> of entity <toseven>.
+Parsing VHDL file "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\ps2_keyboard.vhd" into library work
+Parsing entity <ps2_keyboard>.
+Parsing architecture <Behavioral> of entity <ps2_keyboard>.
+Parsing VHDL file "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" into library work
+Parsing entity <Test_RS232>.
+Parsing architecture <BEHAVIORAL> of entity <test_rs232>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Test_RS232> (architecture <BEHAVIORAL>) from library <work>.
+WARNING:HDLCompiler:89 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" Line 56: <ps2_kbd> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" Line 67: <vgatxt48x20> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" Line 98: <rs232> remains a black-box since it has no binding entity.
+
+Elaborating entity <toseven> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ps2_keyboard> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" Line 55: Net <XLXI_49_reset_openSignal> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Test_RS232>.
+    Related source file is "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf".
+INFO:Xst:3210 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" line 140: Output port <DO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" line 150: Output port <Busy> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" line 184: Output port <TxBusy> of the instance <XLXI_37> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" line 209: Output port <answer> of the instance <XLXI_49> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" line 209: Output port <set_rng> of the instance <XLXI_49> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" line 209: Output port <reset_out> of the instance <XLXI_49> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" line 209: Output port <set_q> of the instance <XLXI_49> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\Test_RS232.vhf" line 209: Output port <check> of the instance <XLXI_49> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <XLXI_49_reset_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Test_RS232> synthesized.
+
+Synthesizing Unit <toseven>.
+    Related source file is "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\toseven.vhd".
+    Summary:
+	no macro.
+Unit <toseven> synthesized.
+
+Synthesizing Unit <ps2_keyboard>.
+    Related source file is "C:\Users\lab\Desktop\QUIZ10.06\QUIZ3.06\ps2_keyboard.vhd".
+    Found 1-bit register for signal <received>.
+    Found 11-bit register for signal <buffer1>.
+    Found 8-bit register for signal <scancode>.
+    Found 1-bit register for signal <last_clk>.
+    Found 4-bit register for signal <state_out>.
+    Found 1-bit register for signal <reset_out>.
+    Found 1-bit register for signal <set_rng>.
+    Found 1-bit register for signal <set_q>.
+    Found 3-bit register for signal <state>.
+    Found 32-bit register for signal <answer_ASCII>.
+    Found 8-bit register for signal <answer>.
+    Found 4-bit register for signal <bit_count>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <bit_count[3]_GND_9_o_add_2_OUT> created at line 48.
+    Found 4 bit to 16 bit decoder compact to one-hot for signal <n0102> created at line 42
+    Found 1-bit 5-to-1 multiplexer for signal <state[2]_GND_9_o_Mux_51_o> created at line 69.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  72 D-type flip-flop(s).
+	inferred  27 Multiplexer(s).
+	inferred   1 Decoder(s).
+	inferred   1 Finite State Machine(s).
+Unit <ps2_keyboard> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 11
+ 1-bit register                                        : 5
+ 11-bit register                                       : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 2
+# Multiplexers                                         : 27
+ 1-bit 2-to-1 multiplexer                              : 21
+ 1-bit 5-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 5
+# Decoders                                             : 1
+ 1-of-16 decoder                                       : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <PS2_Kbd.ngc>.
+Reading core <VGAtxt48x20.ngc>.
+Reading core <RS232.ngc>.
+Loading core <PS2_Kbd> for timing and area information for instance <XLXI_1>.
+Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_2>.
+Loading core <RS232> for timing and area information for instance <XLXI_37>.
+
+Synthesizing (advanced) Unit <ps2_keyboard>.
+The following registers are absorbed into counter <bit_count>: 1 register on signal <bit_count>.
+Unit <ps2_keyboard> synthesized (advanced).
+WARNING:Xst:2677 - Node <buffer1_0> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <buffer1_9> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <buffer1_10> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_8> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_9> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_10> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_11> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_12> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_13> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_14> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_15> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_16> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_17> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_18> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_19> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_20> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_21> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_22> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_23> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_24> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_25> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_26> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_27> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_28> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_29> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_30> of sequential type is unconnected in block <ps2_keyboard>.
+WARNING:Xst:2677 - Node <answer_ASCII_31> of sequential type is unconnected in block <ps2_keyboard>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 18
+ 1-bit 5-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 5
+# Decoders                                             : 1
+ 1-of-16 decoder                                       : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <set_rng> in Unit <ps2_keyboard> is equivalent to the following FF/Latch, which will be removed : <set_q> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_49/FSM_0> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 10
+ 011   | 11
+-------------------
+WARNING:Xst:1426 - The value init of the FF/Latch answer_ASCII_5 hinder the constant cleaning in the block ps2_keyboard.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch answer_ASCII_4 hinder the constant cleaning in the block ps2_keyboard.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <answer_ASCII_3> has a constant value of 0 in block <ps2_keyboard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <answer_ASCII_6> has a constant value of 0 in block <ps2_keyboard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <answer_ASCII_7> has a constant value of 0 in block <ps2_keyboard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <answer_3> (without init value) has a constant value of 0 in block <ps2_keyboard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <answer_6> (without init value) has a constant value of 0 in block <ps2_keyboard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <answer_7> (without init value) has a constant value of 0 in block <ps2_keyboard>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <answer_ASCII_4> in Unit <ps2_keyboard> is equivalent to the following FF/Latch, which will be removed : <answer_ASCII_5> 
+INFO:Xst:2261 - The FF/Latch <answer_4> in Unit <ps2_keyboard> is equivalent to the following FF/Latch, which will be removed : <answer_5> 
+
+Optimizing unit <Test_RS232> ...
+
+Optimizing unit <ps2_keyboard> ...
+WARNING:Xst:2677 - Node <XLXI_49/reset_out> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/answer_4> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/answer_2> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/answer_1> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/answer_0> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/answer_ASCII_4> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/answer_ASCII_2> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/answer_ASCII_1> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/answer_ASCII_0> of sequential type is unconnected in block <Test_RS232>.
+WARNING:Xst:2677 - Node <XLXI_49/set_rng> of sequential type is unconnected in block <Test_RS232>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Test_RS232, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Test_RS232.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 547
+#      AND2                        : 1
+#      AND3                        : 4
+#      AND3B1                      : 4
+#      AND3B2                      : 1
+#      BUF                         : 3
+#      GND                         : 4
+#      INV                         : 22
+#      LUT1                        : 66
+#      LUT2                        : 56
+#      LUT2_L                      : 5
+#      LUT3                        : 45
+#      LUT3_L                      : 3
+#      LUT4                        : 122
+#      LUT4_D                      : 8
+#      LUT4_L                      : 11
+#      MUXCY                       : 76
+#      MUXF5                       : 21
+#      MUXF5_L                     : 2
+#      MUXF6                       : 6
+#      OR2                         : 5
+#      VCC                         : 4
+#      XOR2                        : 1
+#      XORCY                       : 77
+# FlipFlops/Latches                : 234
+#      FD                          : 56
+#      FDE                         : 85
+#      FDR                         : 33
+#      FDRE                        : 58
+#      FDRSE                       : 1
+#      FDSE                        : 1
+# RAMS                             : 2
+#      RAMB16_S9                   : 1
+#      RAMB16_S9_S9                : 1
+# Shift Registers                  : 3
+#      SRL16                       : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 3
+#      OBUF                        : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                      226  out of   4656     4%  
+ Number of Slice Flip Flops:            234  out of   9312     2%  
+ Number of 4 input LUTs:                341  out of   9312     3%  
+    Number used as logic:               338
+    Number used as Shift registers:       3
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     66    15%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk_50MHz                          | BUFGP                  | 239   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.281ns (Maximum Frequency: 120.758MHz)
+   Minimum input arrival time before clock: 4.959ns
+   Maximum output required time after clock: 5.103ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_50MHz'
+  Clock period: 8.281ns (frequency: 120.758MHz)
+  Total number of paths / destination ports: 3931 / 499
+-------------------------------------------------------------------------
+Delay:               8.281ns (Levels of Logic = 9)
+  Source:            XLXI_2/XLXI_147/Mrom_DO_rom0000 (RAM)
+  Destination:       XLXI_2/XLXI_115/XLXI_155/PixOut (FF)
+  Source Clock:      Clk_50MHz rising
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: XLXI_2/XLXI_147/Mrom_DO_rom0000 to XLXI_2/XLXI_115/XLXI_155/PixOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S9:CLK->DO6    1   2.436   0.357  XLXI_147/Mrom_DO_rom0000 (XLXN_899<6>)
+     begin scope: 'XLXI_2/XLXI_115/XLXI_1:D1'
+     begin scope: 'XLXI_2/XLXI_115/XLXI_1/I_M01:D1'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             1   0.612   0.000  I_36_38 (O)
+     end scope: 'XLXI_2/XLXI_115/XLXI_1/I_M01:O'
+     MUXF5_L:I0->LO        1   0.278   0.000  I_M03 (M03)
+     MUXF6:I0->O           1   0.451   0.357  I_O (O)
+     end scope: 'XLXI_2/XLXI_115/XLXI_1:O'
+     XOR2:I0->O            1   0.612   0.357  XLXI_115/XLXI_141 (XLXI_115/XLXN_727)
+     AND2:I1->O            1   0.612   0.360  XLXI_115/XLXI_154 (XLXI_115/XLXN_762)
+     LUT4:I3->O            1   0.612   0.000  XLXI_115/XLXI_155/iPixOut103 (XLXI_115/XLXI_155/iPixOut)
+     FD:D                      0.268          XLXI_115/XLXI_155/PixOut
+    ----------------------------------------
+    Total                      8.281ns (6.493ns logic, 1.788ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Offset:              4.959ns (Levels of Logic = 3)
+  Source:            PS2_Clk (PAD)
+  Destination:       XLXI_49/bit_count_3 (FF)
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: PS2_Clk to XLXI_49/bit_count_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.607  PS2_Clk_IBUF (PS2_Clk_IBUF)
+     LUT4:I1->O            2   0.612   0.410  XLXI_49/_n014421 (XLXI_49/_n0144_bdd0)
+     LUT3:I2->O           12   0.612   0.817  XLXI_49/_n014411 (XLXI_49/_n0144)
+     FDRE:R                    0.795          XLXI_49/bit_count_0
+    ----------------------------------------
+    Total                      4.959ns (3.125ns logic, 1.834ns route)
+                                       (63.0% logic, 37.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              5.103ns (Levels of Logic = 3)
+  Source:            XLXI_2/XLXI_115/XLXI_155/PixOut (FF)
+  Destination:       VGA_B (PAD)
+  Source Clock:      Clk_50MHz rising
+
+  Data Path: XLXI_2/XLXI_115/XLXI_155/PixOut to VGA_B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.514   0.451  XLXI_115/XLXI_155/PixOut (VGA_RGB)
+     end scope: 'XLXI_2:VGA_RGB'
+     BUF:I->O              1   0.612   0.357  XLXI_3 (VGA_R_OBUF)
+     OBUF:I->O                 3.169          VGA_R_OBUF (VGA_R)
+    ----------------------------------------
+    Total                      5.103ns (4.295ns logic, 0.808ns route)
+                                       (84.2% logic, 15.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk_50MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_50MHz      |    8.281|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.52 secs
+ 
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+--> 
+
+Total memory usage is 4487652 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   53 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

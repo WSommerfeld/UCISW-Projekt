@@ -1,0 +1,3 @@
+vhdl work "toseven.vhd"
+vhdl work "ps2_keyboard.vhd"
+vhdl work "Test_RS232.vhf"

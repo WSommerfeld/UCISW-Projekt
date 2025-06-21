@@ -1,0 +1,7 @@
+vhdl work "rng.vhd"
+vhdl work "QUIZ.vhd"
+vhdl work "OUTPUT.vhd"
+vhdl work "loopser.vhd"
+vhdl work "licznik.vhd"
+vhdl work "INPUT_SPLIT.vhd"
+vhdl work "core.vhf"

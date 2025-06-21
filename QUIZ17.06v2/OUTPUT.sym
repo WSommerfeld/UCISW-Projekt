@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="OUTPUT">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2025-6-17T13:46:23</timestamp>
+    <pin polarity="Input" x="0" y="-288" name="CLK" />
+    <pin polarity="Input" x="0" y="-224" name="CORRECT_IN" />
+    <pin polarity="Input" x="0" y="-160" name="STATE_IN(3:0)" />
+    <pin polarity="Input" x="0" y="-96" name="CORRECT_SUM(7:0)" />
+    <pin polarity="Input" x="0" y="-32" name="TEXT_OUTPUT(815:0)" />
+    <pin polarity="Output" x="672" y="-288" name="READY" />
+    <pin polarity="Output" x="672" y="-32" name="TEXT_FOR_DISPLAY(815:0)" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="336" y="-328" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin CLK" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin CORRECT_IN" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin STATE_IN(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin CORRECT_SUM(7:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin TEXT_OUTPUT(815:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="600" y="-288" type="pin READY" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="600" y="-32" type="pin TEXT_FOR_DISPLAY(815:0)" />
+        <rect width="544" x="64" y="-320" height="320" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <rect width="64" x="0" y="-172" height="24" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <line x2="672" y1="-288" y2="-288" x1="608" />
+        <rect width="64" x="608" y="-44" height="24" />
+        <line x2="672" y1="-32" y2="-32" x1="608" />
+    </graph>
+</symbol>

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/OUTPUT_tb_isim_beh.exe" -prj "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/OUTPUT_tb_beh.prj" "work.OUTPUT_tb" 

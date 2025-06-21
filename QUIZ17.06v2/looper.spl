@@ -1,0 +1,9 @@
+[Inputs]
+clk
+asdf
+ready
+=text[815:0]=
+[Outputs]
+char_we
+=char_in[7:0]=
+[BiDir]

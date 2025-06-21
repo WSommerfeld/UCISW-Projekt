@@ -1,0 +1,47 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl core_drc.vhf -w C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.sch 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+sch2sym -intstyle ise -family spartan3e -refsym core C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.sch C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.sym 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 core.ngc core.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o core_map.ncd core.ngd core.pcf 
+par -w -intstyle ise -ol high -t 1 core_map.ncd core.ncd core.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml core.twx core.ncd -o core.twr core.pcf 
+bitgen -intstyle ise -f core.ut core.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 core.ngc core.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o core_map.ncd core.ngd core.pcf 
+par -w -intstyle ise -ol high -t 1 core_map.ncd core.ncd core.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml core.twx core.ncd -o core.twr core.pcf 
+bitgen -intstyle ise -f core.ut core.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 core.ngc core.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o core_map.ncd core.ngd core.pcf 
+par -w -intstyle ise -ol high -t 1 core_map.ncd core.ncd core.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml core.twx core.ncd -o core.twr core.pcf 
+bitgen -intstyle ise -f core.ut core.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06v2/QUIZ10.06/QUIZ3.06/core.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 core.ngc core.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o core_map.ncd core.ngd core.pcf 
+par -w -intstyle ise -ol high -t 1 core_map.ncd core.ncd core.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml core.twx core.ncd -o core.twr core.pcf 
+bitgen -intstyle ise -f core.ut core.ncd 

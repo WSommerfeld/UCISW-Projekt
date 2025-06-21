@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/keyboard_test1.xst" -ofn "C:/Users/lab/Desktop/QUIZ3.06222/QUIZ3.06/keyboard_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.xst" -ofn "C:/Users/lab/Desktop/QUIZ10.06/QUIZ3.06/keyboard_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 keyboard_test1.ngc keyboard_test1.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o keyboard_test1_map.ncd keyboard_test1.ngd keyboard_test1.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_test1_map.ncd keyboard_test1.ncd keyboard_test1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml keyboard_test1.twx keyboard_test1.ncd -o keyboard_test1.twr keyboard_test1.pcf 
+bitgen -intstyle ise -f keyboard_test1.ut keyboard_test1.ncd 
